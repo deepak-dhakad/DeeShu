@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel DeeShu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/22a75636ad.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body style="text-align: center;">
+    <section id="navigation-search">
+        <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="1.png" class="brand-logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto my-auto">
+
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Brand Story</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">
+                                Rooms
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Dining</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Things To Do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="1.jpg" class="d-block w-100 main-image" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="2.jpg" class="d-block w-100 main-image" alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        <div class="search">
+            <form class="row gx-2 gy-2 align-items-center">
+                <div class="col-sm-2">
+                    <label class="search-label" for="specificSizeInputName">CHECK-IN</label>
+                    <input type="date" class="form-control" id="specificSizeInputName" placeholder="CHECK-IN">
+                </div>
+                <div class="col-sm-2">
+                    <label class="search-label" for="specificSizeInputGroupUsername">CHECK-OUT</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control" id="specificSizeInputGroupUsername"
+                            placeholder="CHECK-OUT">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <label class="search-label" for="specificSizeSelect">ROOM(s)</label>
+                    <select class="form-select" id="specificSizeSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">1 Room</option>
+                        <option value="2">2 Rooms</option>
+                        <option value="3">3 Rooms</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label class="search-label" for="specificSizeSelect">ADULT(s)</label>
+                    <select class="form-select" id="specificSizeSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label class="search-label" for="specificSizeSelect">CHILD(s)</label>
+                    <select class="form-select" id="specificSizeSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">0 Child</option>
+
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Childs</option>
+                        <option value="3">3 Childs</option>
+                    </select>
+                </div>
+
+                <div class="col-auto">
+                    <button type="button" class="btn btn-primary " style="margin-top: 40px;">submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid">
+            <h1 style="padding-bottom: 10px;">WELCOME TO DeeShu </h1>
+            <p style="text-align: center;">Redefining contemporary hospitality for guests, DeeShu is all about the
+                modern conveniences, especially curated to make stay<br> experiences one-of-a-kind.</p>
+
+            <p> Located in Bangalore, the property is in close proximity to major landmarks of the city, including
+                Kumarakrupa Road, Gandhinagar,<br> MG Road, Brigade Road, Vidhana Soudha, ISKCON Temple, Indiranagar, UB
+                City and other known locations of this bustling<br> metropolitan.</p>
+
+            <p> People from all across the world visit the city for business and leisure purposes and DeeShu makes sure
+                that while they’re here, guests<br> get to experience the unique “Y-Gen” lifestyle. With an aim to
+                redefine conventional hospitality, DeeShu aims to offer an unforgettable <br>experience to the
+                travellers.</p>
+            <p> Other attractions that are located a few minutes away from the property are Race Course, Chickpet and
+                other such prominent <br>locations.
+            </p>
+        </div>
+        <div class="row container-fluid" style="padding-top: 80px; padding-bottom: 50px;">
+            <div class="col-md-6 col-sm-12">
+                <img src="3.jpg">
+
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h3 style="text-align: justify;">OUR<br> BRAND STORY</h3>
+                <hr>
+                <p>DeeShu is a premium hotel brand under Great Destinations Hotels & Resorts Pvt. Ltd. The name DeeShu
+                    is contemporary and brings to mind a mood and tone that defines our brand. If you are looking for
+                    something that is fresh, vivid and contemporary you have come to the right place. Conveniently
+                    located, with state-of-the-art facilities, our services aim to Energize, Engage and Entertain.<br>
+                    The first “Y-Gen” lifestyle hotel in the city, DeeShu aim to redefine the conventional hospitality
+                    experience with our contemporary, yet opulent offerings that offer all our guests something truly
+                    unique. Designed to be ultra modern with an infusion of indigenous design elements, DeeShu aims to
+                    offer an unforgettable experience to all that stay with us.
+
+                </p>
+
+
+            </div>
+
+        </div>
+        <div>
+            <h3>OUR <br>ROOMS & SUITES</h3>
+
+            <p>DeeShu Bangalore consists of an inventory of 108 rooms and suites. Each of these is a fusion of opulence
+                and luxury to facilitate a smooth stay. Offering a world of<br> seamless comfort, they have been
+                categorized as Suite, Executive Rooms and Superior Rooms.</p>
+            <div class="row">
+                <div class="col-lg-3" style="margin-left: 380px;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-pause="false" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="4.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Executive Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="5.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Deluxe Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="6.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Superior Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="7.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Economy Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="8.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Suite</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"
+                        data-bs-pause="false" data-bs-touch="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="5.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Deluxe Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="6.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Superior Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="7.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Economy Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="8.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Suite</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="4.jpg" class="d-block w-100" alt="...">
+                                <h6 style="padding-top: 10px;">Executive Rooms</h6>
+                                <a href="#" style="text-decoration: none;">see details→</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <h2 style="margin-top: 20px;">OUR GUESTS TOUCHPOINTS</h2>
+            <div class="row">
+                <div class="col-lg-1 col-md-3 feature-image" style="margin-left: 400px;">
+                    <img src="9.png">
+                </div>
+                <div class="col-lg-1 col-md-3 feature-image">
+                    <img src="10.png">
+                </div>
+                <div class="col-lg-1 col-md-3 feature-image">
+                    <img src="11.png">
+                </div>
+                <div class="col-lg-1 col-md-3 feature-image">
+                    <img src="12.png">
+                </div>
+                <div class="col-lg-1 col-md-3 feature-image">
+                    <img src="13.png">
+                </div>
+
+            </div>
+        </div>
+        <h2>OUR <br>RESTAURANT</h2>
+        <p>With a capacity to accommodate 84 guests at once, Atlas World Café is synonymous to chic luxury. This trendy
+            and contemporary dining space at DeeShu is ideal to gather<br>
+            with your friends and family for a delicious experience, featuring preparations from different parts of the
+            globe. Our experienced chefs have curated some of the most mouth-<br>
+            watering recipes so that the guests can have a relaxed time and indulge in their favourite delights.
+            <img src="14.jpg" style="margin-top: 30px;">
+        <h2>OUR<br>MEETING & EVENTS</h2>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-3" style="margin-left: 200px;">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+                    data-bs-touch="false" data-bs-interval="2500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="15.jpg" class="meeting_image">
+                            <h6>ALLURE</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="16.jpg" class="meeting_image">
+                            <h6>AURA</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="17.jpg" class="meeting_image">
+                            <h6>ZING</h6>
+                            <p><a href="#">DETAILS></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+                    data-bs-touch="false" data-bs-interval="2500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="16.jpg" class="meeting_image">
+                            <h6>AURA</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="17.jpg" class="meeting_image">
+                            <h6>ZING</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="15.jpg" class="meeting_image">
+                            <h6>ALLURE</h6>
+                            <p><a href="#">DETAILS></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false"
+                    data-bs-touch="false" data-bs-interval="2500">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="17.jpg" class="meeting_image">
+                            <h6>ZING</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="15.jpg" class="meeting_image">
+                            <h6>ALLURE</h6>
+                            <p><a href="#">DETAILS></a></p>
+
+
+                        </div>
+                        <div class="carousel-item">
+                            <img src="16.jpg" class="meeting_image">
+                            <h6>AURA</h6>
+                            <p><a href="#">DETAILS></a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h2 style="margin-top: 30px;">OUR<br>FACILITIES & AMENITIES</h2>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-lg-3" style="margin-left: 200px;">
+                <img src="18.jpg" style="width: 300px;">
+                <h6>lyasya Spa</h6>
+                <p><a href="#">DETAILS></a></p>
+
+            </div>
+            <div class="col-lg-3">
+                <img src="19.jpg" style="width: 300px;">
+                <h6>Drip</h6>
+                <p><a href="#">DETAILS></a></p>
+
+            </div>
+            <div class="col-lg-3">
+                <img src="20.jpg" style="width: 300px;">
+                <h6>Fitness Center</h6>
+                <p><a href="#">DETAILS></a></p>
+
+            </div>
+        </div>
+
+
+    </section>
+    <section id="footer">
+        <div class="container-fluid">
+            <h2 class="content-heading" style="text-align: center;">Contact</h2>
+            <hr class="content-heading-border">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <h6 style="padding: 2%;"><a href="tel:9084760503"  class="call-email"><i class="fa-solid fa-phone"></i> 9084760503</a>
+                    </h6>
+                    <h6 style="padding: 2% ;"><a href="mailto:deepak297512@gmail.com"  class="call-email"><i class="fa-solid fa-envelope"></i>
+                            deepak297512@gmaill.com</a></h6>
+
+                </div>
+                <div class="col-lg-4 col-md-12 social-media">
+                    <a href="https://www.instagram.com/dhakad___deepak/" class="social-link"><i
+                            class="fa-brands fa-3x fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/deepak-dhakad-57274722a" class="social-link"><i
+                            class="fa-brands fa-3x fa-linkedin"></i></a>
+                    <a href="https://www.snapchat.com/add/dhakad-deepak?share_id=j7a6d4Sgd5Q&locale=en-US" class="social-link"><i
+                            class="fa-brands fa-3x fa-snapchat-square"></i></a>
+                    <a href="https://twitter.com/Deepak_297512" class="social-link"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <h4 class="feedback" >Feedback</h4>
+                    <form class action="mailto:deepak297512@gmail.com" method="post" enctype="text/plain">
+                        <label>Your Name</label>
+                        <input type="text" name="Your Name" required>
+                        <br>
+                        <br>
+                        
+                        <label>Your E-mail</label>
+                        <input type="email" name="Your E-mail" required>
+                        <br>
+                        <br>
+                        <label>Your Message</label>
+                        <br>
+                        <textarea name="Your Message" rows="2" cols="25"></textarea required>
+                        <br>
+                        <input style="margin: 20px;" type="submit">
+                        <input type="reset">
+                    
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <h6 style="text-align: center;"><a href="https://deepak-dhakad.github.io/portfolio/" target="_blank">Designed By Deepak</a></h6>
+        </div>
+    </section>
+</body>
+
+</html>
