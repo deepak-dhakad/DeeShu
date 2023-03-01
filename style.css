@@ -1,0 +1,51 @@
+.container-fluid{
+    margin: 0;
+}
+
+.brand-logo{
+    width: 70px;
+}
+.nav-item{
+    
+    margin: 10px;
+}
+.main-image{
+    width: 500px;
+    height:600px;
+}
+.search{
+    padding-top: 20px;
+text-align: center;
+margin-left: 110px;
+padding-bottom: 20px;
+
+}
+.search-label{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.feature-image{
+margin-left: 10px;
+margin-right: 10px;
+}
+.meeting_image{
+    width: 300px;
+}
+.social-link{
+    color: #534f4f;
+    text-decoration: none;
+    padding: 2% 3%;
+}
+.social-media{
+    padding-top: 3%;
+}
+.feedback{
+    padding-top: 3% ; 
+    padding-bottom: 3%; 
+    color: black;
+}
+.call-email{
+    color: #534f4f;
+    text-decoration: none;
+    
+}
